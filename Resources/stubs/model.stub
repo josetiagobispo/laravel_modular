@@ -1,0 +1,30 @@
+<?php
+#josetiagobsouza@gmail.com
+#Classe Model da Tabela %MODELNAME%
+#versao 0.0.1
+namespace %NAMESPACE%;
+use Illuminate\Database\Eloquent\Model;
+
+class %MODELNAME% extends Model
+{
+    /**
+         * The database table used by the model.
+         *
+         * @var string
+         */
+        protected $table = '%TABLENAME%';
+
+        /**
+         * The database primary key value.
+         *
+         * @var string
+         */
+        protected $primaryKey = '%TABLEPK%';
+
+        /**
+         * Attributes that should be mass-assignable.
+         *
+         * @var array
+         */
+        protected $fillable = [%FILLABLES%];
+}

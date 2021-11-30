@@ -1,0 +1,7 @@
+%ROW_OPEN%
+<div class="form-group col-6 {{ $errors->has('%COLUNA_NOME%') ? 'is-invalid' : ''}}">
+    <label for="%COLUNA_NOME%" class="control-label">@lang('%LOWER_NAME%::app.%COLUNA_NOME%')</label>
+     {!! Form::select('%COLUNA_NOME%', array('default' => 'SELECIONE UMA OPÇÃO') + $%MODULO_NOME_FIELD%, isset($%LOWER_NAME%->%COLUNA_NOME%) ? $%LOWER_NAME%->%COLUNA_NOME% : null,['class' => 'form-control select2'] ) !!}
+    {!! $errors->first('%COLUNA_NOME%', '<p class="invalid-feedback">:message</p>') !!}
+</div>
+%ROW_CLOSED%

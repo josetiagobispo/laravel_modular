@@ -1,0 +1,1 @@
+<li><a class="{{ route('admin.%LOWER_NAME%.index') == $currentRoute ? 'active beep beep-sidebar ' : null }}" href="{{ route('admin.%LOWER_NAME%.index') }}">@lang('%LOWER_NAME%::app.%LOWER_NAME%')</a></li>

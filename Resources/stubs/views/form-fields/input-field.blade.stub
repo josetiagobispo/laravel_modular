@@ -1,0 +1,7 @@
+%ROW_OPEN%
+<div class="form-group col-6 {{ $errors->has('%COLUNA_NOME%') ? 'is-invalid' : ''}}">
+    <label for="%COLUNA_NOME%" class="control-label">@lang('%LOWER_NAME%::app.%COLUNA_NOME%')</label>
+    <input class="form-control" maxlength="%COLUNA_NOME%" name="%COLUNA_NOME%" type="text" id="%COLUNA_NOME%" value="{{ isset($%LOWER_NAME%->%COLUNA_NOME%) ? $%LOWER_NAME%->%COLUNA_NOME% : ''}}" %REQUIRED%>
+    {!! $errors->first('%COLUNA_NOME%', '<p class="invalid-feedback">:message</p>') !!}
+</div>
+%ROW_CLOSED%

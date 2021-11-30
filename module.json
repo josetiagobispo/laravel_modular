@@ -1,0 +1,13 @@
+{
+    "name": "Gerador",
+    "alias": "gerador",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Gerador\\Providers\\GeradorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

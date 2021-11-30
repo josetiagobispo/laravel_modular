@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/gerador",
+    "description": "",
+    "authors": [
+        {
+            "name": "José Tiago",
+            "email": "josetiagobsouza@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Gerador\\Providers\\GeradorServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Gerador\\": ""
+        }
+    }
+}

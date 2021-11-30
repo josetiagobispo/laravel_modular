@@ -1,0 +1,5 @@
+%FIELDS_FORM%
+
+<div class="form-group">
+    <input class="btn btn-primary" type="submit" value="{{ $formMode === 'edit' ? 'Salvar' : 'Criar' }}">
+</div>
